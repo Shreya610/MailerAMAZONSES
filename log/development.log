@@ -1,0 +1,296 @@
+Started GET "/" for ::1 at 2022-12-31 11:38:00 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1054)
+  Rendered layout layouts/application.html.erb (Duration: 99.0ms | Allocations: 80866)
+Completed 200 OK in 109ms (Views: 101.6ms | ActiveRecord: 0.0ms | Allocations: 87003)
+
+
+Started GET "/" for ::1 at 2022-12-31 12:38:58 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 21846)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 26779)
+
+
+Started POST "/send_email" for ::1 at 2022-12-31 12:39:17 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"shreya", "email"=>"shreyajoshi.cool@gmail.com", "message"=>"dasdsad"}
+MyMailer#send_email: processed outbound mail in 7.6ms
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms | Allocations: 39283)
+
+
+  
+ActionView::MissingTemplate (Missing template my_mailer/send_email with "mailer".
+
+Searched in:
+  * "my_mailer"
+):
+  
+app/mailers/my_mailer.rb:6:in `send_email'
+app/controllers/welcome_controller.rb:3:in `send_email'
+Started GET "/" for ::1 at 2022-12-31 12:46:15 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1039)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 21845)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 26778)
+
+
+Started GET "/" for ::1 at 2022-12-31 12:46:15 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1358)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1591)
+
+
+Started POST "/send_email" for ::1 at 2022-12-31 12:46:22 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"dsa", "email"=>"shreyajoshi.cool@gmail.com", "message"=>"dsakdhjhacjah"}
+  Rendering my_mailer/send_email.html.erb
+  Rendered my_mailer/send_email.html.erb (Duration: 0.5ms | Allocations: 185)
+MyMailer#send_email: processed outbound mail in 12.6ms
+Started POST "/send_email" for ::1 at 2022-12-31 12:46:22 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"dsa", "email"=>"shreyajoshi.cool@gmail.com", "message"=>"dsakdhjhacjah"}
+  Rendering my_mailer/send_email.html.erb
+  Rendered my_mailer/send_email.html.erb (Duration: 0.1ms | Allocations: 12)
+MyMailer#send_email: processed outbound mail in 3.3ms
+Started POST "/send_email" for ::1 at 2022-12-31 12:46:26 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"dsa", "email"=>"shreyajoshi.cool@gmail.com", "message"=>"dsakdhjhacjah"}
+  Rendering my_mailer/send_email.html.erb
+  Rendered my_mailer/send_email.html.erb (Duration: 0.1ms | Allocations: 12)
+MyMailer#send_email: processed outbound mail in 2.2ms
+Started POST "/send_email" for ::1 at 2022-12-31 12:46:26 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"dsa", "email"=>"shreyajoshi.cool@gmail.com", "message"=>"dsakdhjhacjah"}
+  Rendering my_mailer/send_email.html.erb
+  Rendered my_mailer/send_email.html.erb (Duration: 0.1ms | Allocations: 12)
+MyMailer#send_email: processed outbound mail in 3.3ms
+Started POST "/send_email" for ::1 at 2022-12-31 12:46:26 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"dsa", "email"=>"shreyajoshi.cool@gmail.com", "message"=>"dsakdhjhacjah"}
+  Rendering my_mailer/send_email.html.erb
+  Rendered my_mailer/send_email.html.erb (Duration: 0.2ms | Allocations: 11)
+MyMailer#send_email: processed outbound mail in 18.1ms
+Delivered mail 63afe1c61257f_19013e30-4e5@Shreyas-MBP.mail (7441.2ms)
+Date: Sat, 31 Dec 2022 12:46:22 +0530
+From: shreyajoshi.cool@gmail.com
+To: shreyajoshi1280@gmail.com
+Message-ID: <63afe1c61257f_19013e30-4e5@Shreyas-MBP.mail>
+Subject: Amazon SES Email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sarmad,
+Somebody contacted you through your site.
+Details:
+
+Name: dsa,
+
+Email: shreyajoshi.cool@gmail.com,
+
+Message: dsakdhjhacjah
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 7475ms (ActiveRecord: 0.0ms | Allocations: 69046)
+
+
+Started POST "/send_email" for ::1 at 2022-12-31 12:46:29 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"dsa", "email"=>"shreyajoshi.cool@gmail.com", "message"=>"dsakdhjhacjah"}
+  Rendering my_mailer/send_email.html.erb
+  Rendered my_mailer/send_email.html.erb (Duration: 0.1ms | Allocations: 11)
+MyMailer#send_email: processed outbound mail in 1.6ms
+Delivered mail 63afe1c6e7829_19013e44-35@Shreyas-MBP.mail (9726.5ms)
+Date: Sat, 31 Dec 2022 12:46:22 +0530
+From: shreyajoshi.cool@gmail.com
+To: shreyajoshi1280@gmail.com
+Message-ID: <63afe1c6e7829_19013e44-35@Shreyas-MBP.mail>
+Subject: Amazon SES Email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sarmad,
+Somebody contacted you through your site.
+Details:
+
+Name: dsa,
+
+Email: shreyajoshi.cool@gmail.com,
+
+Message: dsakdhjhacjah
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 9734ms (ActiveRecord: 0.0ms | Allocations: 25099)
+
+
+Delivered mail 63afe1ca5be87_19013e80-2af@Shreyas-MBP.mail (7322.6ms)
+Date: Sat, 31 Dec 2022 12:46:26 +0530
+From: shreyajoshi.cool@gmail.com
+To: shreyajoshi1280@gmail.com
+Message-ID: <63afe1ca5be87_19013e80-2af@Shreyas-MBP.mail>
+Subject: Amazon SES Email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sarmad,
+Somebody contacted you through your site.
+Details:
+
+Name: dsa,
+
+Email: shreyajoshi.cool@gmail.com,
+
+Message: dsakdhjhacjah
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 7327ms (ActiveRecord: 0.0ms | Allocations: 22024)
+
+
+Delivered mail 63afe1caa1ea9_19013e58-12e@Shreyas-MBP.mail (7686.4ms)
+Date: Sat, 31 Dec 2022 12:46:26 +0530
+From: shreyajoshi.cool@gmail.com
+To: shreyajoshi1280@gmail.com
+Message-ID: <63afe1caa1ea9_19013e58-12e@Shreyas-MBP.mail>
+Subject: Amazon SES Email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sarmad,
+Somebody contacted you through your site.
+Details:
+
+Name: dsa,
+
+Email: shreyajoshi.cool@gmail.com,
+
+Message: dsakdhjhacjah
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 7693ms (ActiveRecord: 0.0ms | Allocations: 18502)
+
+
+Delivered mail 63afe1cae081b_19013e6c01@Shreyas-MBP.mail (10152.2ms)
+Date: Sat, 31 Dec 2022 12:46:26 +0530
+From: shreyajoshi.cool@gmail.com
+To: shreyajoshi1280@gmail.com
+Message-ID: <63afe1cae081b_19013e6c01@Shreyas-MBP.mail>
+Subject: Amazon SES Email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sarmad,
+Somebody contacted you through your site.
+Details:
+
+Name: dsa,
+
+Email: shreyajoshi.cool@gmail.com,
+
+Message: dsakdhjhacjah
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 10174ms (ActiveRecord: 0.0ms | Allocations: 16123)
+
+
+Delivered mail 63afe1cd7f88c_19013e30188@Shreyas-MBP.mail (10522.4ms)
+Date: Sat, 31 Dec 2022 12:46:29 +0530
+From: shreyajoshi.cool@gmail.com
+To: shreyajoshi1280@gmail.com
+Message-ID: <63afe1cd7f88c_19013e30188@Shreyas-MBP.mail>
+Subject: Amazon SES Email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sarmad,
+Somebody contacted you through your site.
+Details:
+
+Name: dsa,
+
+Email: shreyajoshi.cool@gmail.com,
+
+Message: dsakdhjhacjah
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 10526ms (ActiveRecord: 0.0ms | Allocations: 11606)
+
+
+Started GET "/" for ::1 at 2022-12-31 12:46:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1381)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1615)
+
+
+Started GET "/" for ::1 at 2022-12-31 12:52:30 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1029)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 21735)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 26668)
+
+
+Started POST "/send_email" for ::1 at 2022-12-31 12:53:14 +0530
+Processing by WelcomeController#send_email as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"shreya", "email"=>"shreyajoshi1280@gmail.com", "message"=>"Order is delivered"}
+  Rendering my_mailer/send_email.html.erb
+  Rendered my_mailer/send_email.html.erb (Duration: 0.6ms | Allocations: 186)
+MyMailer#send_email: processed outbound mail in 7.8ms
+Delivered mail 63afe36244c28_1aa23e80-467@Shreyas-MBP.mail (7385.0ms)
+Date: Sat, 31 Dec 2022 12:53:14 +0530
+From: shreyajoshi.cool@gmail.com
+To: sigmatconsultancy@gmail.com
+Message-ID: <63afe36244c28_1aa23e80-467@Shreyas-MBP.mail>
+Subject: Amazon SES Email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Sarmad,
+Somebody contacted you through your site.
+Details:
+
+Name: shreya,
+
+Email: shreyajoshi1280@gmail.com,
+
+Message: Order is delivered
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 7431ms (ActiveRecord: 0.0ms | Allocations: 45108)
+
+
+Started GET "/" for ::1 at 2022-12-31 12:53:21 +0530
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1382)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 1615)
+
+
